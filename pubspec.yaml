@@ -30,6 +30,55 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cached_network_image: ^3.3.1
+  csv: ^6.0.0
+  dropdown_button2: ^2.3.9
+  file_picker: ^8.0.3
+  flutter_gen: ^5.4.0
+  flutter_svg: ^2.0.9
+  flutter_svg_provider: ^1.0.7
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  http: ^1.2.0
+  intl: ^0.18.1
+  image_cropper: ^7.1.0
+  # image_picker: ^1.1.1
+  loading_animation_widget: ^1.2.1
+  logger: ^2.2.0
+  percent_indicator: ^4.2.3
+  pinput: ^4.0.0
+  reveal_on_scroll: ^0.0.3
+  syncfusion_flutter_datepicker: ^25.1.42
+  dio: ^5.1.1
+  dio_cookie_manager: ^3.0.0
+  fluttertoast: ^8.2.2
+  sizer: ^2.0.15
+  socket_io_client: ^2.0.3+1
+  wechat_assets_picker: ^9.2.1
+  flutter_easyloading: ^3.0.5
+  cookie_jar: ^4.0.2
+  permission_handler: ^11.0.1
+  flutter_phoenix: ^1.1.1
+  # media_picker_widget: ^1.0.7
+  google_sign_in: ^6.1.6
+  the_apple_sign_in: ^1.1.1
+  sign_in_with_apple: ^5.0.0
+  firebase_auth:
+  url_launcher: ^6.0.20
+  package_info_plus: ^8.0.2
+  device_info_plus: ^9.0.0
+  photo_manager: ^3.0.0
+  flutter_html: ^3.0.0-alpha.5
+  build_runner: ^2.1.11
+  pin_code_fields: ^8.0.1
+  flutter_gen_runner: ^5.4.0
+  scroll_loop_auto_scroll: ^0.0.5
+  pay: ^2.0.0
+  firebase_core:
+  nuts_activity_indicator: ^1.0.0
+  connectivity_plus: ^2.3.0
+  in_app_purchase: ^3.2.0
+  image_picker: ^0.8.6
 
 
   # The following adds the Cupertino Icons font to your application.
