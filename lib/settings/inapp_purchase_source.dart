@@ -232,7 +232,7 @@ class InAppPurchaseSourceImpl implements InAppPurchaseSource {
   //   try {
   //     final response = await HttpClient().postUrl(Uri.parse(appStoreURL))
   //       ..headers.contentType = ContentType.json
-  //       ..write(jsonEncode({'receipt-data': receipt, 'password': 'f04ad880f80c416e84f82110f01d0def', 'exclude-old-transactions': true}));
+  //       ..write(jsonEncode({'receipt-data': receipt, 'password': '', 'exclude-old-transactions': true}));
 
   //     final receiptResponse = await response.close();
   //     final responseBody = await receiptResponse.transform(utf8.decoder).join();
