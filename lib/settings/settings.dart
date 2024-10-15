@@ -1,14 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_inappsubscriptions/core/components/app_bar.dart';
+import 'package:flutter_inappsubscriptions/core/components/sb.dart';
+import 'package:flutter_inappsubscriptions/core/constants/app_strings.dart';
+import 'package:flutter_inappsubscriptions/core/extensions/build_context_extension.dart';
+import 'package:flutter_inappsubscriptions/settings/settings_controller.dart';
 
 import 'package:get/get.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import 'package:sparkd/core/constants/imports.dart';
-import 'package:sparkd/pages/settings/settings_controller.dart';
-import 'package:sparkd/pages/terms_condition/terms_condition.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -30,7 +31,7 @@ class SettingsPage extends StatelessWidget {
                 // _SubscriptionCard(controller: controller), // Show the subscription card
                 SB.h(20),
                 _Tile(
-                  iconPath: Assets.icons.terms.path,
+                  iconPath: "Assets.icons.terms.path",
                   title: AppStrings.termsConditions,
                   onTap: ()async {
                      const url =
