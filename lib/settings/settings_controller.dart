@@ -1,9 +1,9 @@
 import 'dart:async';
 
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/settings/inapp_purchase_source.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:sparkd/core/constants/imports.dart';
-import 'package:sparkd/pages/settings/inapp_purchase_source.dart';
 
 class SettingsController extends GetxController {
   InAppPurchaseSource inAppPurchaseSource;
