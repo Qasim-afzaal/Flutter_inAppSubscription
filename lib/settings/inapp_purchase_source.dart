@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter_inappsubscriptions/api_repository/api_function.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 
-import 'package:sparkd/api_repository/api_function.dart';
 
 import '../../core/constants/imports.dart';
 
@@ -232,7 +232,7 @@ class InAppPurchaseSourceImpl implements InAppPurchaseSource {
   //   try {
   //     final response = await HttpClient().postUrl(Uri.parse(appStoreURL))
   //       ..headers.contentType = ContentType.json
-  //       ..write(jsonEncode({'receipt-data': receipt, 'password': '', 'exclude-old-transactions': true}));
+  //       ..write(jsonEncode({'receipt-data': receipt, 'password': 'f04ad880f80c416e84f82110f01d0def', 'exclude-old-transactions': true}));
 
   //     final receiptResponse = await response.close();
   //     final responseBody = await receiptResponse.transform(utf8.decoder).join();
