@@ -1,5 +1,5 @@
+import 'package:flutter_inappsubscriptions/settings/settings_controller.dart';
 import 'package:get/get.dart';
-import 'package:sparkd/pages/settings/settings_controller.dart';
 
 class SettingsBinding extends Bindings {
   @override
