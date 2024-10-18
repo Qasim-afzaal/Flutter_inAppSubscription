@@ -1,6 +1,10 @@
 import 'dart:io';
 
-import 'package:sparkd/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/core/components/app_button.dart';
+import 'package:flutter_inappsubscriptions/core/components/sb.dart';
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+
+
 
 mixin SocialSignIn {
   Widget socialButton(BuildContext context) => Row(
@@ -8,13 +12,13 @@ mixin SocialSignIn {
         children: [
           AppButton.borderIcon(
             // onTap: () => loginWithGoogle(),
-            icon: Assets.icons.google.svg(),
+            icon: Icon(Icons.abc)
           ),
           if (Platform.isIOS) ...[
             SB.w(15),
             AppButton.borderIcon(
               // onPressed: _signInWithApple,
-              icon: Assets.icons.apple.svg(),
+            icon: Icon(Icons.abc)
             ),
           ]
         ],
