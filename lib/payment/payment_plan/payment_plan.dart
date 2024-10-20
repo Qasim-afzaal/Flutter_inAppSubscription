@@ -1,9 +1,14 @@
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
-import 'package:sparkd/core/constants/imports.dart';
-import 'package:sparkd/pages/terms_condition/terms_condition.dart';
+import 'package:flutter_inappsubscriptions/core/components/app_bar.dart';
+import 'package:flutter_inappsubscriptions/core/components/sb.dart';
+import 'package:flutter_inappsubscriptions/core/constants/app_strings.dart';
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/core/extensions/build_context_extension.dart';
+import 'package:get/get_state_manager/src/simple/get_state.dart';
 
+import '../../core/components/app_button.dart';
 import 'payment_plan_controller.dart';
 
 class PaymentPlanPage extends StatelessWidget {
@@ -21,7 +26,7 @@ class PaymentPlanPage extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  AppStrings.infiniteSparkd,
+                  "AppStrings.infiniteSparkd,",
                   textAlign: TextAlign.center,
                   style: context.headlineMedium?.copyWith(
                     color: context.primary,
@@ -32,15 +37,15 @@ class PaymentPlanPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     _Column(
-                      icon: Assets.images.sparks,
+                      // icon: Assets.images.sparks,
                       text: AppStrings.unlimitedSparks,
                     ),
                     _Column(
-                      icon: Assets.images.coach,
+                      // icon: Assets.images.coach,
                       text: AppStrings.personalCoach,
                     ),
                     _Column(
-                      icon: Assets.images.dates,
+                      // icon: Assets.images.dates,
                       text: AppStrings.provenDates,
                     ),
                   ],
@@ -113,7 +118,7 @@ class PaymentPlanPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Assets.images.flame.image(height: 22),
+                              // Assets.images.flame.image(height: 22),
                               SB.w(8),
                               Text(
                                 AppStrings.freeTrial,
@@ -126,7 +131,7 @@ class PaymentPlanPage extends StatelessWidget {
                           ? 13:15),
                               ),
                               SB.w(8),
-                              Assets.images.flame.image(height: 22),
+                              // Assets.images.flame.image(height: 22),
                             ],
                           )
                         ],
@@ -141,9 +146,9 @@ class PaymentPlanPage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Assets.images.flameGroup.image(scale: (MediaQuery.of(context).size.height >= 667.0 &&
-                              MediaQuery.of(context).size.height <= 710.0)
-                          ? 3:2),
+                          // Assets.images.flameGroup.image(scale: (MediaQuery.of(context).size.height >= 667.0 &&
+                          //     MediaQuery.of(context).size.height <= 710.0)
+                          // ? 3:2),
                         ],
                       ),
                     ),
@@ -161,7 +166,7 @@ class PaymentPlanPage extends StatelessWidget {
                 const Spacer(),
                 InkWell(
                   onTap: () {
-                    Get.to(() => TermsConditionPage());
+                
                   },
                   child: Text(
                     AppStrings.termsConditions,
@@ -183,19 +188,19 @@ class PaymentPlanPage extends StatelessWidget {
 }
 
 class _Column extends StatelessWidget {
-  const _Column({super.key, required this.icon, required this.text});
+  const _Column({super.key,  required this.text});
 
-  final AssetGenImage icon;
+  // final AssetGenImage icon;
   final String text;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        icon.image(
-          height: 80,
-          width: 80,
-        ),
+        // icon.image(
+        //   height: 80,
+        //   width: 80,
+        // ),
         SB.h(15),
         Text(
           text,
