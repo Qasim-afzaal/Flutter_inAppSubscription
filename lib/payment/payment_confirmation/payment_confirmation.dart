@@ -1,4 +1,10 @@
-import 'package:sparkd/core/constants/imports.dart';
+
+import 'package:flutter_inappsubscriptions/core/components/app_button.dart';
+import 'package:flutter_inappsubscriptions/core/components/sb.dart';
+import 'package:flutter_inappsubscriptions/core/constants/app_strings.dart';
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/core/extensions/build_context_extension.dart';
+
 import 'payment_confirmation_controller.dart';
 
 class PaymentConfirmationPage extends StatelessWidget {
@@ -11,9 +17,9 @@ class PaymentConfirmationPage extends StatelessWidget {
       builder: (controller) {
         return Scaffold(
           body: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                image: Assets.images.paymentConfirmation.provider(),
+                image:AssetImage(""),
                 fit: BoxFit.cover,
               ),
             ),
@@ -41,7 +47,7 @@ class PaymentConfirmationPage extends StatelessWidget {
                   SB.h(35),
                   AppButton.primary(
                     title: AppStrings.letsGo,
-                    onPressed: () => Get.offAll(() => const DashboardPage()),
+                    onPressed: () => {},
                   ).paddingAll(context.paddingDefault),
                 ],
               ),
