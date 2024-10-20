@@ -1,5 +1,11 @@
-import 'package:sparkd/core/constants/imports.dart';
-import 'package:sparkd/pages/payment/payment_method/payment_method_controller.dart';
+
+import 'package:flutter_inappsubscriptions/core/components/app_bar.dart';
+import 'package:flutter_inappsubscriptions/core/components/app_button.dart';
+import 'package:flutter_inappsubscriptions/core/components/sb.dart';
+import 'package:flutter_inappsubscriptions/core/constants/app_strings.dart';
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/core/extensions/build_context_extension.dart';
+import 'package:flutter_inappsubscriptions/payment/payment_method/payment_method_controller.dart';
 
 class PaymentMethodPage extends StatelessWidget {
   const PaymentMethodPage({super.key});
@@ -83,7 +89,7 @@ class _Container extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              data.image.svg(width: 36),
+              // data.image.svg(width: 36),
               SB.w(15),
               Expanded(
                 child: Column(
@@ -122,7 +128,7 @@ class _Container extends StatelessWidget {
 
 class PaymentUIModel {
   final String title;
-  final SvgGenImage image;
+  final Image image;
   final String? description;
 
   PaymentUIModel({required this.title, required this.image, this.description});
