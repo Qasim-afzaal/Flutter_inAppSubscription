@@ -1,5 +1,5 @@
-import 'package:sparkd/pages/payment/payment_confirmation/payment_confirmation.dart';
-import 'package:sparkd/pages/payment/payment_method/payment_method.dart';
+import 'package:flutter_inappsubscriptions/payment/payment_confirmation/payment_confirmation.dart';
+import 'package:flutter_inappsubscriptions/payment/payment_method/payment_method.dart';
 
 import '../../../core/constants/imports.dart';
 
@@ -9,15 +9,15 @@ class PaymentMethodController extends GetxController {
   final List<PaymentUIModel> paymentMethodsList = [
     PaymentUIModel(
         title: "Master Card",
-        image: Assets.icons.mastercard,
+        image: Image(image: AssetImage("")),
         description: 'xxxx - xxxx - xxxx - 8973'),
     PaymentUIModel(
       title: "Apple pay",
-      image: Assets.icons.applepay,
+      image: Image(image: AssetImage("")),
     ),
     PaymentUIModel(
       title: "Google pay",
-      image: Assets.icons.googlePay,
+      image: Image(image: AssetImage("")),
     ),
   ];
 
