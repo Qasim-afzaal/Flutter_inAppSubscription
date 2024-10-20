@@ -1,8 +1,9 @@
-import 'package:sparkd/core/extensions/app_theme_extension.dart';
-import 'package:sparkd/core/theme/app_theme.dart';
+
 
 // import 'package:sparkd/gen/fonts.gen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappsubscriptions/core/extensions/app_theme_extension.dart';
+import 'package:flutter_inappsubscriptions/core/theme/app_theme.dart';
 
 class ThemeLight extends AppTheme {
   ThemeData get theme => ThemeData(
