@@ -1,15 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_inappsubscriptions/core/constants/constants.dart';
+import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
+import 'package:flutter_inappsubscriptions/payment/payment_confirmation/payment_confirmation.dart';
+import 'package:flutter_inappsubscriptions/settings/inapp_purchase_source.dart';
 import 'package:get/get.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:sparkd/api_repository/api_function.dart';
-import 'package:sparkd/core/constants/imports.dart';
-import 'package:sparkd/models/error_response.dart';
-import 'package:sparkd/pages/payment/payment_confirmation/payment_confirmation.dart';
-import 'package:sparkd/pages/payment/payment_method/payment_method.dart';
-import 'package:sparkd/pages/settings/inapp_purchase_source.dart';
 
 class PaymentPlanController extends GetxController {
   InAppPurchaseSource inAppPurchaseSource;
@@ -128,20 +126,20 @@ class PaymentPlanController extends GetxController {
         break;
     }
   }
-  void logoutAccount() async {
-      getStorageData.removeAllData();
-  }
-  void deleteAccount() async {
-     final userid =getStorageData.getUserId();
-     print("userid $userid");
-    final data = await APIFunction().deleteApiCall(
-      apiName: Constants.deleteUser+userid!,
-    );
-    try {
-     getStorageData.removeAllData();
-    } catch (e) {
-      ErrorResponse errorModel = ErrorResponse.fromJson(data);
-      utils.showToast(message: errorModel.message!);
-    }
-  }
+  // void logoutAccount() async {
+  //     getStorageData.removeAllData();
+  // }
+  // void deleteAccount() async {
+  //    final userid =getStorageData.getUserId();
+  //    print("userid $userid");
+  //   final data = await APIFunction().deleteApiCall(
+  //     apiName: Constants.deleteUser+userid!,
+  //   );
+  //   try {
+  //    getStorageData.removeAllData();
+  //   } catch (e) {
+  //     ErrorResponse errorModel = ErrorResponse.fromJson(data);
+  //     utils.showToast(message: errorModel.message!);
+  //   }
+  // }
 }
