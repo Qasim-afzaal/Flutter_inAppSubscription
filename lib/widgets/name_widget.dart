@@ -7,8 +7,8 @@ import 'package:flutter_inappsubscriptions/core/constants/imports.dart';
 import 'package:flutter_inappsubscriptions/core/extensions/build_context_extension.dart';
 
 class NameWidget extends StatelessWidget {
-  const NameWidget({super.key, required this.controller});
-  final GatherNewChatInfoController controller;
+  const NameWidget({super.key});
+  // final GatherNewChatInfoController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -30,13 +30,13 @@ class NameWidget extends StatelessWidget {
         ),
         SB.h(40),
         CustomTextField(
-          controller: controller.nameController,
+          // controller: controller.nameController,
           title: AppStrings.name,
         ),
         SB.h(25),
         AppButton.primary(
           title:" AppStrings.getMySparkd",
-          onPressed: controller.getSparkd,
+          // onPressed: controller.getSparkd,
         )
       ],
     ).paddingAll(context.paddingDefault);
