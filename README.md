@@ -1,7 +1,4 @@
-Here's a polished, visually enhanced version of your README with badges, icons, and improved structure:
-
-```markdown
-# 💰 Flutter In-App Subscriptions Masterclass
+# 💰 Flutter In-App Subscriptions 
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.22-%2302569B?logo=flutter)](https://flutter.dev)
 [![in_app_purchase](https://img.shields.io/pub/v/in_app_purchase?color=0175C2&label=in_app_purchase)](https://pub.dev/packages/in_app_purchase)
@@ -187,10 +184,4 @@ InAppPurchase.instance.purchaseStream.listen((purchases) {
 3. Commit changes: `git commit -m 'Add revenue tracking'`
 4. Push to branch: `git push origin feat/subscription-analytics`
 5. Open pull request
-
----
-
-## 📜 License
-
-[![License]([https://img.shields.io/github/license/yourusername/flutter-inapp-subscriptions](https://github.com/Qasim-afzaal/Flutter_inAppSubscription)?color=blue)](LICENSE)
 
